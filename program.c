@@ -100,7 +100,7 @@ void exchangeCoins()
 	printf("Pilih menu:\n");
 	printf("1. Brute Force \n");
 	printf("2. Greedy Algorithm \n");
-	printf(" Choise Algorithm : \n");
+	printf("Choise Algorithm : \n");
 	scanf("%d", &selectAlgorithm);
 
 	if (selectAlgorithm == 1)
@@ -113,11 +113,38 @@ void exchangeCoins()
 	}
 	else
 	{
-		printf("selectAlgorithm tidak ada");
+		printf("Algorithm tidak ditemukan\n");
 	}
 }
 
 int main()
 {
+	int pilihanProgram;
+	printf("Pilih program: \n");
+	printf("1. Exchange Coins \n");
+	printf("2. Job Scheduling \n");
+	printf("3. Knapsack Problem \n");
+	printf("4. Exit \n");
+	printf("Pilih program: ");
+	scanf("%d", &pilihanProgram);
+
+	switch (pilihanProgram)
+	{
+	case 1:
+		exchangeCoins();
+		break;
+	case 2:
+		// jobScheduling();
+		break;
+	case 3:
+		// knapsackProblem();
+		break;
+	case 4:
+		exit(0);
+		break;
+	default:
+		printf("Program tidak ditemukan\n");
+		break;
+	}
 	return 0;
 }
