@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "penjadwalan.h"
+
 // create function bruteForce to exchange coins
 // Brute Force Algorithm
 void bruteForce(int coin[], int manyCoins, int coinExchange)
@@ -122,7 +124,7 @@ int main()
 	int pilihanProgram;
 	printf("Pilih program: \n");
 	printf("1. Exchange Coins \n");
-	printf("2. Job Scheduling \n");
+	printf("2. Task Scheduling \n");
 	printf("3. Knapsack Problem \n");
 	printf("4. Exit \n");
 	printf("Pilih program: ");
@@ -134,7 +136,7 @@ int main()
 		exchangeCoins();
 		break;
 	case 2:
-		// jobScheduling();
+		taskScheduling();
 		break;
 	case 3:
 		// knapsackProblem();
